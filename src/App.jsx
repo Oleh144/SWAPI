@@ -6,7 +6,7 @@ function App() {
         <>
             <div className="container">
                 <HeroList />
-                <Flow />
+                {/*<Flow />*/}
             </div>
         </>
     )
