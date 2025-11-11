@@ -7,15 +7,19 @@ import { ChakraProvider, createSystem, defaultConfig, defineConfig } from "@chak
 import HeroGraph from "@/components/HeroGraph.tsx";
 
 const router = createBrowserRouter([
+        {
+            path: '/',
+            element: <App />,
+        },
+        {
+            path: '/graph',
+            element: <HeroGraph />,
+        },
+    ],
     {
-        path: '/',
-        element: <App />,
-    },
-    {
-        path: '/graph',
-        element: <HeroGraph />,
-    },
-]);
+        basename: '/SWAPI',
+    }
+);
 
 const config = defineConfig({
     theme: {
